@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <h2>&#x1F4BB Mude o tamanho do seu navegador</h2>
+    <p>Usei a Tag <strong>&lt;picture&gt;</strong> para fazer com que as imagenn mudem, <br> dentro da da tag usei o outra Tag chamada <strong>&lt;source&gt;</strong> para redimensionar <br> a imagem caso o tamanho do navegador mude.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Outra imagem de teste</h1>
+    <picture>
+        <source media="(max-width: 550px )" srcset="imagens/luffy-100.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/luffy-500.png" type="image/png">
+        <img src="imagens/luffy-1000.png" alt="">
+    </picture>
+    
+</body>
+</html>
